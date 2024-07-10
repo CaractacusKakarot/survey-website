@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    margin: 20px;
+    border: 2px solid #ddd;
 }
 
 h1, h2 {
@@ -25,10 +25,10 @@ h1, h2 {
 }
 
 .question {
+    margin-bottom: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
     background-color: #f9f9f9;
 }
 
@@ -38,28 +38,29 @@ label {
     color: #333;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
     margin-right: 10px;
 }
 
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #5c85d6;
+    background-color: #5cb85c;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4a6fb3;
+    background-color: #4cae4c;
 }
