@@ -41,13 +41,13 @@
 
             <div class="question">
                 <h2>Total Weight of Pets Combined:</h2>
-                <label for="total-weight">What is the total weight of your pets combined? (Select all that apply)</label><br>
+                <label for="total-weight">What is the total weight of your pet(s)? (Select all that apply)</label><br>
                 <div class="multi-column">
                     <label><input type="checkbox" id="under-10" name="total-weight" value="Under 10 lbs"> Under 10 lbs</label>
                     <label><input type="checkbox" id="11-20" name="total-weight" value="11-20 lbs"> 11-20 lbs</label>
                     <label><input type="checkbox" id="20-50" name="total-weight" value="20-50 lbs"> 20-50 lbs</label>
                     <label><input type="checkbox" id="50-100" name="total-weight" value="50-100 lbs"> 50-100 lbs</label>
-                    <label><input type="checkbox" id="101+" name="total-weight" value="101+ lbs"> 101+ lbs</label>
+                    <label><input type="checkbox" id="101-plus" name="total-weight" value="101+ lbs"> 101+ lbs</label>
                 </div>
             </div>
 
@@ -100,14 +100,14 @@
                     <label><input type="checkbox" id="every-other-day" name="refill-frequency" value="Every other day"> Every other day</label>
                     <label><input type="checkbox" id="once-a-week" name="refill-frequency" value="Once a week"> Once a week</label>
                 </div>
-
+                
                 <label for="water-location">Where do you usually place your pet’s water source? (Select all that apply)</label><br>
                 <div class="multi-column">
                     <label><input type="checkbox" id="indoors" name="water-location" value="Indoors"> Indoors</label>
                     <label><input type="checkbox" id="outdoors" name="water-location" value="Outdoors"> Outdoors</label>
                     <label><input type="checkbox" id="both" name="water-location" value="Both"> Both</label>
                 </div>
-
+                
                 <label for="sunlight-exposure">How much direct sunlight does your water source get? (Select all that apply)</label><br>
                 <div class="multi-column">
                     <label><input type="checkbox" id="none" name="sunlight-exposure" value="None"> None</label>
@@ -137,8 +137,7 @@
             <div class="question">
                 <h2>Environmental Factors:</h2>
                 <label for="temperature-effect">Does the temperature (hot or cold weather) affect how you provide water to your pets? If so, how?</label>
-                <textarea id="temperature-effect" name="temperature-effect" rows="4"></textarea><br>
-                <label><input type="checkbox" id="no-effect" name="temperature-effect" value="No"> No</label>
+                <textarea id="temperature-effect" name="temperature-effect" rows="4"></textarea>
             </div>
 
             <div class="question">
@@ -212,8 +211,7 @@
                 <h2>General Feedback:</h2>
                 <label for="general-feedback">Do you have any other comments or suggestions regarding pet hydration systems?</label>
                 <textarea id="general-feedback" name="general-feedback" rows="4"></textarea>
-                <label for="email">Email (optional):</label>
-                <input type="email" id="email" name="email" class="other-input">
+
                 <label for="survey-issues">If you had any issues with this survey, please let us know.</label>
                 <textarea id="survey-issues" name="survey-issues" rows="4"></textarea>
             </div>
