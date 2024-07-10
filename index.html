@@ -3,27 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Critters Survey</title>
+    <title>Pet Owner Survey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Cool Critters Product Survey</h1>
+        <h1>Pet Owner Survey</h1>
+        <p>We are conducting a survey to understand pet owners' experiences and preferences regarding pet hydration. Your input will help improve products and services for pet care.</p>
         <form id="survey-form" action="https://formspree.io/f/mrbzbgbl" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="feedback">Feedback:</label>
-                <textarea id="feedback" name="feedback" rows="4" required></textarea>
-            </div>
+            
+            <h2>Pet Type:</h2>
+            <label for="pet-type">What type of pet do you own?</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Small Animal">Small Animal</option>
+                <option value="Other">Other (please specify)</option>
+            </select>
+
+            <h2>Number of Pets:</h2>
+            <label for="number-of-pets">How many pets do you have?</label>
+            <select id="number-of-pets" name="number-of-pets" required>
+                <option value="1">1</option>
+                <option value="More than 1 of the same type">More than 1 of the same type</option>
+                <option value="More than 1 of different types">More than 1 of different types</option>
+            </select>
+
+            <h2>Current Hydration Practices:</h2>
+            <label for="hydration-method">How do you currently provide water to your pets?</label>
+            <select id="hydration-method" name="hydration-method" required>
+                <option value="Bowl">Bowl</option>
+                <option value="Automatic Dispenser">Automatic Dispenser</option>
+                <option value="Water Fountain">Water Fountain</option>
+                <option value="Other">Other (please specify)</option>
+            </select>
+
+            <h2>Water Source:</h2>
+            <label for="water-source">What do you use to give your pet water?</label>
+            <select id="water-source" name="water-source" required>
+                <option value="Tap">Tap</option>
+                <option value="Hose">Hose</option>
+                <option value="Bottled">Bottled</option>
+                <option value="Filtered">Filtered</option>
+                <option value="Rain Collection">Rain Collection</option>
+                <option value="Other">Other (please specify)</option>
+            </select>
+
+            <h2>Water Temperature Preference:</h2>
+            <label for="water-temperature">What temperature does your pet prefer for drinking water?</label>
+            <select id="water-temperature" name="water-temperature" required>
+                <option value="Hot">Hot</option>
+                <option value="Warm">Warm</option>
+                <option value="Room Temperature">Room Temperature</option>
+                <option value="Tap Temperature">Tap Temperature</option>
+                <option value="Cool">Cool</option>
+                <option value="Cold">Cold</option>
+                <option value="Cold with Ice">Cold with Ice</option>
+            </select>
+
+            <h2>Frequency and Location:</h2>
+            <label for="refill-frequency">How often do you refill your pet's water bowl or dispenser?</label>
+            <select id="refill-frequency" name="refill-frequency" required>
+                <option value="Once a day">Once a day</option>
+                <option value="Multiple times a day">Multiple times a day</option>
+                <option value="Every other day">Every other day</option>
+                <option value="Once a week">Once a week</option>
+            </select>
+
+            <label for="water-location">Where do you usually place your pet’s water source?</label>
+            <select id="water-location" name="water-location" required>
+                <option value="Indoors">Indoors</option>
+                <option value="Outdoors">Outdoors</option>
+                <option value="Both">Both</option>
+            </select>
+
+            <label for="sunlight-exposure">How much direct sunlight does your water source get?</label>
+            <select id="sunlight-exposure" name="sunlight-exposure" required>
+                <option value="None">None</option>
+                <option value="Indoors but near windows">Indoors but near windows</option>
+                <option value="Outdoors">Outdoors</option>
+                <option value="Outdoors but covered">Outdoors but covered</option>
+                <option value="Outdoors partial sun">Outdoors partial sun</option>
+                <option value="Outdoors full sun">Outdoors full sun</option>
+            </select>
+
+            <h2>Issues and Concerns:</h2>
+            <label for="hydration-issues">What issues do you face with your current method of providing water to your pets?</label>
+            <select id="hydration-issues" name="hydration-issues" required>
+                <option value="Spillage">Spillage</option>
+                <option value="Contamination">Contamination</option>
+                <option value="Frequent Refills">Frequent Refills</option>
+                <option value="Difficulty in Cleaning">Difficulty in Cleaning</option>
+                <option value="Other">Other (please specify)</option>
+            </select>
+
+            <h2>Environmental Factors:</h2>
+            <label for="temperature-effect">Does the temperature (hot or cold weather) affect how you provide water to your pets? If so, how?</label>
+            <textarea id="temperature-effect" name="temperature-effect" rows="4"></textarea>
+
+            <h2>Durability and Maintenance:</h2>
+            <label for="durability-importance">How important is it for you that the pet hydration system is durable and easy to clean?</label>
+            <select id="durability-importance" name="durability-importance" required>
+                <option value="Very Important">Very Important</option>
+                <option value="Important">Important</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Not Important">Not Important</option>
+            </select>
+
+            <h2>Material Preferences:</h2>
+            <label for="material-preference">What materials do you prefer for pet water dispensers?</label>
+            <select id="material-preference" name="material-preference" required>
+                <option value="Plastic">Plastic</option>
+                <option value="Stainless Steel">Stainless Steel</option>
+                <option value="Ceramic">Ceramic</option>
+                <option value="Glass">Glass</option>
+                <option value="Other">Other (please specify)</option>
+            </select>
+
+            <h2>Age of Current Hydration System:</h2>
+            <label for="hydration-system-age">How old is the current bowl or dispenser you are using?</label>
+            <select id="hydration-system-age" name="hydration-system-age" required>
+                <option value="Less than a year">Less than a year</option>
+                <option value="1-4 years old">1-4 years old</option>
+                <option value="5+ years">5+ years</option>
+            </select>
+
+            <h2>Interest in New Products:</h2>
+            <label for="new-product-interest">Would you be interested in a new pet hydration system if it addressed the issues you mentioned?</label>
+            <select id="new-product-interest" name="new-product-interest" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+
+            <h2>Additional Features:</h2>
+            <label for="additional-features">What additional features would you like in a pet hydration system?</label>
+            <select id="additional-features" name="additional-features" required>
+                <option value="Filtration">Filtration</option>
+                <option value="Cooling">Cooling</option>
+                <option value="Heating">Heating</option>
+                <option value="Other">Other (please specify)</option>
+            </select>
+
+            <h2>Price Sensitivity:</h2>
+            <label for="price-range">What price range are you willing to pay for an improved pet hydration system?</label>
+            <select id="price-range" name="price-range" required>
+                <option value="Under $20">Under $20</option>
+                <option value="$20-$40">$20-$40</option>
+                <option value="$40-$60">$40-$60</option>
+                <option value="Over $60">Over $60</option>
+            </select>
+
+            <h2>General Feedback:</h2>
+            <label for="general-feedback">Do you have any other comments or suggestions regarding pet hydration systems?</label>
+            <textarea id="general-feedback" name="general-feedback" rows="4"></textarea>
+
+            <label for="survey-issues">If you had any issues with this survey, please let us know.</label>
+            <textarea id="survey-issues" name="survey-issues" rows="4"></textarea>
+
             <button type="submit">Submit</button>
         </form>
+        <p>Thank you for participating in our survey! Your feedback is invaluable in helping us create better products for pet care.</p>
     </div>
 </body>
 </html>
