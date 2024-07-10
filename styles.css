@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -16,7 +16,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    margin: 20px 0;
 }
 
 h1, h2 {
@@ -24,23 +23,34 @@ h1, h2 {
     color: #333;
 }
 
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 label {
     display: block;
     margin: 10px 0 5px;
     color: #333;
+    font-weight: bold;
 }
 
-input, select, textarea {
+input[type="checkbox"], input[type="text"], input[type="email"], textarea {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 10px;
-    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
-input[type="checkbox"], input[type="radio"] {
-    width: auto;
+textarea {
+    resize: vertical;
 }
 
 button {
@@ -58,28 +68,8 @@ button:hover {
 }
 
 .question {
-    margin-bottom: 20px;
-}
-
-.question h2 {
+    border: 1px solid #ccc;
+    padding: 10px;
     margin-bottom: 10px;
-}
-
-@media (min-width: 600px) {
-    .question input[type="checkbox"], .question input[type="radio"] {
-        display: inline-block;
-        width: auto;
-        margin-right: 10px;
-    }
-
-    .question label {
-        display: inline-block;
-        width: calc(33% - 20px);
-        margin-right: 10px;
-        vertical-align: top;
-    }
-
-    .question input[type="text"] {
-        width: calc(67% - 20px);
-    }
+    border-radius: 4px;
 }
