@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Owner Survey</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -143,7 +148,7 @@
 
             <div class="question">
                 <h2>Durability and Maintenance:</h2>
-                <label for="durability-importance">How important is it for you that the pet hydration system is durable and easy to clean?</label><br>
+                <label for="durability-importance">How important is it for you that the pet hydration system is durable and easy to clean? (Select all that apply)</label><br>
                 <input type="checkbox" id="very-important" name="durability-importance" value="Very Important">
                 <label for="very-important">Very Important</label><br>
                 <input type="checkbox" id="important" name="durability-importance" value="Important">
